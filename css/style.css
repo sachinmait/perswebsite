@@ -1,0 +1,114 @@
+/* Reset */
+
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+color: #333;
+background: #f4f4f4;
+}
+
+.container {
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+background: #333;
+color: #fff;
+padding: 10px 0;
+}
+
+.navbar .container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.navbar .logo {
+font-size: 1.5em;
+font-weight: bold;
+color: #fff;
+text-decoration: none;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+}
+
+.nav-links li {
+margin-left: 20px;
+}
+
+.nav-links li a {
+color: #fff;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+color: #ddd;
+}
+
+/* Hamburger (mobile) */
+.hamburger {
+display: none;
+flex-direction: column;
+cursor: pointer;
+}
+
+.hamburger span {
+height: 3px;
+width: 25px;
+background: #fff;
+margin-bottom: 4px;
+border-radius: 3px;
+}
+
+/* Active nav-links for mobile */
+.nav-links.active {
+display: flex;
+flex-direction: column;
+width: 100%;
+background: #333;
+}
+
+.nav-links.active li {
+margin: 10px 0;
+text-align: center;
+}
+
+/* Content */
+.content {
+background: #fff;
+padding: 20px;
+margin: 20px 0;
+}
+
+/* Footer */
+footer {
+background: #333;
+color: #fff;
+text-align: center;
+padding: 10px 0;
+font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.nav-links {
+display: none;
+}
+.hamburger {
+display: flex;
+}
+}
